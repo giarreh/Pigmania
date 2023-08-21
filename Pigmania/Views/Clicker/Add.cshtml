@@ -1,0 +1,62 @@
+﻿@model Pigmania.Models.ApplicationUser
+@using Microsoft.AspNetCore.Identity
+@using Microsoft.CodeAnalysis
+@using Pigmania.Controllers
+@inject SignInManager<ApplicationUser> SignInManager
+@inject UserManager<ApplicationUser> UserManager
+@{
+    ViewData["Title"] = "Truffle Clicker";
+}
+
+
+<head>
+    <script type="text/javascript" src="js/truffleclicker.js"></script>
+    <link rel="stylesheet" href="~/css/truffleclicker.css"/><title>Truffle clicker</title>
+</head>
+<body>
+<div class="truffleCoinDriver">
+    <div>
+        <div>
+            <h2>Current truffle click power: <span id="truffleClickPower"></span></h2>
+            <h2>Current amount of truffles: <span id="truffleCoins"></span></h2>
+            <h2>Current price of next click power upgrade: <span id="clickPowerCost"></span></h2>
+        </div>
+        <form asp-action="Add">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <span asp-validation-for="TruffleCoins" class="text-danger"></span>
+            </div>
+            <div class="truffleCoin">
+                <input type="image" value="Get Truffle" src="/Img/TruffleCoin-modified.png" alt="Submit"/>
+            </div>
+        </form>
+    </div>
+</div>
+    <div class="truffleCoinDriver">
+        <div>
+            <form asp-action="EditClickPower">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <div class="form-group">
+                    <span asp-validation-for="TruffleClickPower" class="text-danger"></span>
+                </div>
+                <div class="truffleClickPower">
+                    <input class="truffleClickImg" type="image" value="Get Truffle" src="/Img/Truffle.png" alt="Submit"/>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+@if (SignInManager.IsSignedIn(User))
+{
+    ApplicationUser applicationUser = (ApplicationUser) await UserManager.GetUserAsync(User);
+    var truffleCoins = applicationUser.TruffleCoins;
+    var truffleClickPower = applicationUser.TruffleClickPower;
+    double priceTemp = 2500 * truffleClickPower / 1.8;
+    int price = Convert.ToInt32(priceTemp);
+    <script>
+    document.getElementById("truffleClickPower").innerHTML = @truffleClickPower
+    document.getElementById("truffleCoins").innerHTML = @truffleCoins
+    document.getElementById("clickPowerCost").innerHTML = @price
+    </script>
+}

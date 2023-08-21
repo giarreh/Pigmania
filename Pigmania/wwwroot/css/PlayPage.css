@@ -1,0 +1,1107 @@
+.bgImageClass{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width:100%
+}
+
+.bgImage{
+    margin-top: -100px;
+    margin-bottom: 120px;
+}
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 100px;
+    gap: 15px;
+    border: 4px solid black;
+    border-radius: 10px;
+    background-color: #323C50;
+    margin-top: -100px;
+}
+
+.box1 {
+    border: 1px solid black;
+    border-radius: 25px;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    margin-right: 5px;
+    margin-left: 5px;
+    margin-top: 5px;
+}
+
+.box1img{
+    grid-area: box1;
+    height: 140px;
+    margin-left: 520px;
+    margin-bottom: -10px;
+}
+
+.box1text{
+    font-family: 'Bakbak One', cursive;
+    font-size: 70px;
+    -webkit-text-stroke-width: 2.5px;
+    -webkit-text-stroke-color: black;
+    color: white;
+    display: block;
+    margin-bottom: -20px;
+    text-align: center
+}
+
+.box2 {
+    border: 2px solid black;
+    border-radius: 25px;
+    grid-column-start: 1;
+    grid-row-start: 3;
+    grid-row-end: 5;
+    margin-bottom: 5px;
+    margin-left: 5px;
+}
+
+.box2text{
+    font-family: 'Bakbak One', cursive;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
+    color: white;
+    display: block;
+    text-align: center
+}
+
+.box2text2{
+    font-family: 'Bakbak One', cursive;
+    -webkit-text-stroke-width: 1px;
+    font-size: 23px;
+    -webkit-text-stroke-color: black;
+    color: white;
+    display: block;
+    text-align: center
+}
+
+.box2img{
+    grid-area: box2;
+    height: 30px;
+    margin-bottom: -10px;
+    margin-left: 155px;
+}
+
+.box2btn{
+    grid-area: box2;
+    margin-left: auto;
+    margin-top: 20px;
+    width: 55%;
+}
+
+
+.box3 {
+    border: 2px solid black;
+    border-radius: 15px;
+    grid-column: 2;
+    grid-row: 3;
+}
+
+.box3text {
+    font-family: 'Bakbak One', cursive;
+    font-size: 28px;
+    -webkit-text-stroke-width: 1.5px;
+    -webkit-text-stroke-color: black;
+    color: white;
+    display: block;
+    text-align: left;
+    margin-left: 10px;
+}
+
+.box3text2{
+    font-family: 'Bakbak One', cursive;
+    -webkit-text-stroke-width: 1px;
+    font-size: 18px;
+    -webkit-text-stroke-color: black;
+    margin-top: -5px;
+    color: white;
+    display: block;
+    text-align: left;
+    margin-left: 10px;
+}
+
+.box3text3{
+    font-family: 'Bakbak One', cursive;
+    -webkit-text-stroke-width: 1px;
+    font-size: 18px;
+    -webkit-text-stroke-color: black;
+    margin-top: -20px;
+    color: white;
+    display: block;
+    text-align: left;
+    margin-left: 10px;
+}
+
+.box3img{
+    grid-area: box3;
+    height: 30px;
+    margin-top: -185px;
+    margin-left: 280px;
+}
+
+.box3btn{
+    grid-area: box3;
+    margin-left: 275px;
+    margin-top: -80px;
+}
+
+.box4 {
+    border: 2px solid black;
+    border-radius: 15px;
+    grid-column: 2;
+    grid-row: 4;
+    margin-bottom: 5px;
+}
+
+.box4text {
+    font-family: 'Bakbak One', cursive;
+    font-size: 28px;
+    -webkit-text-stroke-width: 1.5px;
+    -webkit-text-stroke-color: black;
+    color: white;
+    display: block;
+    text-align: left;
+    margin-left: 10px;
+}
+
+.box4text2{
+    font-family: 'Bakbak One', cursive;
+    -webkit-text-stroke-width: 1px;
+    font-size: 18px;
+    -webkit-text-stroke-color: black;
+    margin-top: -5px;
+    margin-left: 10px;
+    color: white;
+    display: block;
+    text-align: left;
+}
+
+.box4text3{
+    font-family: 'Bakbak One', cursive;
+    -webkit-text-stroke-width: 1px;
+    font-size: 18px;
+    -webkit-text-stroke-color: black;
+    margin-top: -20px;
+    margin-left: 10px;
+    color: white;
+    display: block;
+    text-align: left;
+}
+
+.box4img{
+    grid-area: box3;
+    height: 30px;
+    margin-top: -185px;
+    margin-left: 285px;
+}
+
+.box4btn{
+    grid-area: box3;
+    margin-left: 275px;
+    margin-top: -80px;
+}
+
+.box5 {
+    border: 2px solid black;
+    border-radius: 15px;
+    grid-column: 3;
+    grid-row: 3;
+    margin-right: 5px;
+}
+
+.box5text {
+    font-family: 'Bakbak One', cursive;
+    font-size: 28px;
+    -webkit-text-stroke-width: 1.5px;
+    -webkit-text-stroke-color: black;
+    color: white;
+    display: block;
+    text-align: left;
+    margin-left: 10px;
+}
+
+.box5text2{
+    font-family: 'Bakbak One', cursive;
+    -webkit-text-stroke-width: 1px;
+    font-size: 18px;
+    -webkit-text-stroke-color: black;
+    margin-top: -5px;
+    color: white;
+    display: block;
+    text-align: left;
+    margin-left: 10px;
+}
+
+.box5text3{
+    font-family: 'Bakbak One', cursive;
+    -webkit-text-stroke-width: 1px;
+    font-size: 18px;
+    -webkit-text-stroke-color: black;
+    margin-top: -20px;
+    color: white;
+    display: block;
+    text-align: left;
+    margin-left: 10px;
+}
+
+.box5img{
+    grid-area: box5;
+    height: 30px;
+    margin-top: -175px;
+    margin-left: 270px;
+}
+
+.box5btn{
+    grid-area: box5;
+    margin-left: 265px;
+    margin-top: -75px;
+}
+
+
+.box6{
+    border: 2px solid black;
+    border-radius: 15px;
+    grid-column: 3;
+    grid-row: 4;
+    margin-bottom: 5px;
+    margin-right: 5px;
+}
+
+.box6text {
+    font-family: 'Bakbak One', cursive;
+    font-size: 28px;
+    -webkit-text-stroke-width: 1.5px;
+    -webkit-text-stroke-color: black;
+    color: white;
+    display: block;
+    text-align: left;
+    margin-left: 10px;
+}
+
+.box6text2{
+    font-family: 'Bakbak One', cursive;
+    -webkit-text-stroke-width: 1px;
+    font-size: 18px;
+    -webkit-text-stroke-color: black;
+    margin-top: -5px;
+    margin-left: 10px;
+    color: white;
+    display: block;
+    text-align: left;
+}
+
+.box6text3{
+    font-family: 'Bakbak One', cursive;
+    -webkit-text-stroke-width: 1px;
+    font-size: 18px;
+    -webkit-text-stroke-color: black;
+    margin-top: -20px;
+    margin-left: 10px;
+    color: white;
+    display: block;
+    text-align: left;
+}
+
+.box6img{
+    grid-area: box3;
+    height: 30px;
+    margin-top: -185px;
+    margin-left: 270px;
+}
+
+.box6btn{
+    grid-area: box3;
+    margin-left: 265px;
+    margin-top: -80px;
+}
+
+.wrapper_1 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 100px;
+    gap: 15px;
+    border: 4px solid black;
+    border-radius: 10px;
+    background-color: #323C50;
+    margin-top: -100px;
+}
+
+.box1_1 {
+    border: 2px solid black;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    margin-top: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.box_1_1_h2{
+    font-family: 'Bakbak One', cursive;
+    font-size: 70px;
+    -webkit-text-stroke-width: 2.5px;
+    -webkit-text-stroke-color: black;
+    color: white;
+    display: block;
+    margin-bottom: -25px;
+    margin-top: -10px;
+    text-align: center;
+}
+
+.box_1_1_img{
+    grid-area: box_1_1;
+    height: 160px;
+    margin-left: 492px;
+    margin-top: 5px;
+}
+
+
+.box_2_1 {
+    border: 2px solid black;
+    grid-column-start: 1;
+    grid-row-start: 3;
+    grid-row-end: 5;
+    margin-bottom: 5px;
+    margin-left: 5px;
+}
+
+.box_2_1_text{
+    font-family: 'Bakbak One', cursive;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
+    color: white;
+    display: block;
+    text-align: center
+}
+
+.box_2_1_text2{
+    font-family: 'Bakbak One', cursive;
+    -webkit-text-stroke-width: 1.5px;
+    -webkit-text-stroke-color: black;
+    font-size: 50px;
+    color: white;
+    text-align: center;
+}
+.box_2_1_btn{
+    margin-top: 50px;
+}
+
+.box_2_1_button{
+    background-color: #323C50;
+    display: grid;
+    grid-area: box_2_1;
+    border: 5px solid black;
+    border-radius: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    transition: all 0.2s ease-in-out;
+}
+
+.box_2_1_button:hover{
+    transform: scale(1.1);
+}
+
+.box_3_1 {
+    border: 2px solid black;
+    grid-column-start: 2;
+    grid-row-start: 3;
+    grid-row-end: 5;
+    margin-bottom: 5px;
+}
+
+.box_3_1_text{
+    font-family: 'Bakbak One', cursive;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
+    color: white;
+    display: block;
+    text-align: center
+}
+
+.box_3_1_text2{
+    font-family: 'Bakbak One', cursive;
+    -webkit-text-stroke-width: 1.5px;
+    -webkit-text-stroke-color: black;
+    font-size: 50px;
+    color: white;
+    text-align: center;
+}
+.box_3_1_btn{
+    margin-top: 50px;
+}
+
+.box_3_1_button{
+    background-color: #323C50;
+    display: grid;
+    grid-area: box_2_1;
+    border: 5px solid black;
+    border-radius: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    transition: all 0.2s ease-in-out;
+}
+
+.box_3_1_button:hover{
+    transform: scale(1.1);
+}
+
+.box_4_1 {
+    border: 2px solid black;
+    grid-column-start: 3;
+    grid-row-start: 3;
+    grid-row-end: 5;
+    margin-bottom: 5px;
+}
+
+.box_4_1_text{
+    font-family: 'Bakbak One', cursive;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
+    color: white;
+    display: block;
+    text-align: center
+}
+
+.box_4_1_text2{
+    font-family: 'Bakbak One', cursive;
+    -webkit-text-stroke-width: 1.5px;
+    -webkit-text-stroke-color: black;
+    font-size: 50px;
+    color: white;
+    text-align: center;
+}
+.box_4_1_btn{
+    margin-top: 50px;
+}
+
+.box_4_1_button{
+    background-color: #323C50;
+    display: grid;
+    grid-area: box_2_1;
+    border: 5px solid black;
+    border-radius: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    transition: all 0.2s ease-in-out;
+}
+
+.box_4_1_button:hover{
+    transform: scale(1.1);
+}
+
+.box_5_1 {
+    border: 2px solid black;
+    grid-column-start: 4;
+    grid-row-start: 3;
+    grid-row-end: 5;
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+
+.box_5_1_text{
+    font-family: 'Bakbak One', cursive;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
+    color: white;
+    display: block;
+    text-align: center
+}
+
+.box_5_1_text2{
+    font-family: 'Bakbak One', cursive;
+    -webkit-text-stroke-width: 1.5px;
+    -webkit-text-stroke-color: black;
+    font-size: 50px;
+    color: white;
+    text-align: center;
+}
+.box_5_1_btn{
+    margin-top: 50px;
+}
+
+.box_5_1_button{
+    background-color: #323C50;
+    display: grid;
+    grid-area: box_2_1;
+    border: 5px solid black;
+    border-radius: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    transition: all 0.2s ease-in-out;
+}
+
+.box_5_1_button:hover{
+    transform: scale(1.1);
+}
+.bgImageClass{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width:100%
+}
+
+.bgImage{
+    margin-top: -100px;
+    margin-bottom: 120px;
+}
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 100px;
+    gap: 15px;
+    border: 4px solid black;
+    border-radius: 10px;
+    background-color: #323C50;
+    margin-top: -100px;
+}
+
+
+
+
+.box1 {
+    border: 1px solid black;
+    border-radius: 25px;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    margin-right: 5px;
+    margin-left: 5px;
+    margin-top: 5px;
+}
+
+.box1img{
+    grid-area: box1;
+    height: 140px;
+    margin-left: 520px;
+    margin-bottom: -10px;
+}
+
+.box1text{
+    font-family: 'Bakbak One', cursive;
+    font-size: 70px;
+    -webkit-text-stroke-width: 2.5px;
+    -webkit-text-stroke-color: black;
+    color: white;
+    display: block;
+    margin-bottom: -20px;
+    text-align: center
+}
+
+.box2 {
+    border: 2px solid black;
+    border-radius: 25px;
+    grid-column-start: 1;
+    grid-row-start: 3;
+    grid-row-end: 5;
+    margin-bottom: 5px;
+    margin-left: 5px;
+}
+
+.box2text{
+    font-family: 'Bakbak One', cursive;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
+    color: white;
+    display: block;
+    text-align: center
+}
+
+.box2text2{
+    font-family: 'Bakbak One', cursive;
+    -webkit-text-stroke-width: 1px;
+    font-size: 23px;
+    -webkit-text-stroke-color: black;
+    color: white;
+    display: block;
+    text-align: center
+}
+
+.box2img{
+    grid-area: box2;
+    height: 30px;
+    margin-bottom: -10px;
+    margin-left: 155px;
+}
+
+.box2btn{
+    grid-area: box2;
+    margin-left: auto;
+    margin-top: 20px;
+    width: 55%;
+}
+
+
+.box3 {
+    border: 2px solid black;
+    border-radius: 15px;
+    grid-column: 2;
+    grid-row: 3;
+}
+
+.box3text {
+    font-family: 'Bakbak One', cursive;
+    font-size: 28px;
+    -webkit-text-stroke-width: 1.5px;
+    -webkit-text-stroke-color: black;
+    color: white;
+    display: block;
+    text-align: left;
+    margin-left: 10px;
+}
+
+.box3text2{
+    font-family: 'Bakbak One', cursive;
+    -webkit-text-stroke-width: 1px;
+    font-size: 18px;
+    -webkit-text-stroke-color: black;
+    margin-top: -5px;
+    color: white;
+    display: block;
+    text-align: left;
+    margin-left: 10px;
+}
+
+.box3text3{
+    font-family: 'Bakbak One', cursive;
+    -webkit-text-stroke-width: 1px;
+    font-size: 18px;
+    -webkit-text-stroke-color: black;
+    margin-top: -20px;
+    color: white;
+    display: block;
+    text-align: left;
+    margin-left: 10px;
+}
+
+.box3img{
+    grid-area: box3;
+    height: 30px;
+    margin-top: -185px;
+    margin-left: 280px;
+}
+
+.box3btn{
+    grid-area: box3;
+    margin-left: 275px;
+    margin-top: -80px;
+}
+
+.box4 {
+    border: 2px solid black;
+    border-radius: 15px;
+    grid-column: 2;
+    grid-row: 4;
+    margin-bottom: 5px;
+}
+
+.box4text {
+    font-family: 'Bakbak One', cursive;
+    font-size: 28px;
+    -webkit-text-stroke-width: 1.5px;
+    -webkit-text-stroke-color: black;
+    color: white;
+    display: block;
+    text-align: left;
+    margin-left: 10px;
+}
+
+.box4text2{
+    font-family: 'Bakbak One', cursive;
+    -webkit-text-stroke-width: 1px;
+    font-size: 18px;
+    -webkit-text-stroke-color: black;
+    margin-top: -5px;
+    margin-left: 10px;
+    color: white;
+    display: block;
+    text-align: left;
+}
+
+.box4text3{
+    font-family: 'Bakbak One', cursive;
+    -webkit-text-stroke-width: 1px;
+    font-size: 18px;
+    -webkit-text-stroke-color: black;
+    margin-top: -20px;
+    margin-left: 10px;
+    color: white;
+    display: block;
+    text-align: left;
+}
+
+.box4img{
+    grid-area: box3;
+    height: 30px;
+    margin-top: -185px;
+    margin-left: 285px;
+}
+
+.box4btn{
+    grid-area: box3;
+    margin-left: 275px;
+    margin-top: -80px;
+}
+
+.box5 {
+    border: 2px solid black;
+    border-radius: 15px;
+    grid-column: 3;
+    grid-row: 3;
+    margin-right: 5px;
+}
+
+.box5text {
+    font-family: 'Bakbak One', cursive;
+    font-size: 28px;
+    -webkit-text-stroke-width: 1.5px;
+    -webkit-text-stroke-color: black;
+    color: white;
+    display: block;
+    text-align: left;
+    margin-left: 10px;
+}
+
+.box5text2{
+    font-family: 'Bakbak One', cursive;
+    -webkit-text-stroke-width: 1px;
+    font-size: 18px;
+    -webkit-text-stroke-color: black;
+    margin-top: -5px;
+    color: white;
+    display: block;
+    text-align: left;
+    margin-left: 10px;
+}
+
+.box5text3{
+    font-family: 'Bakbak One', cursive;
+    -webkit-text-stroke-width: 1px;
+    font-size: 18px;
+    -webkit-text-stroke-color: black;
+    margin-top: -20px;
+    color: white;
+    display: block;
+    text-align: left;
+    margin-left: 10px;
+}
+
+.box5img{
+    grid-area: box5;
+    height: 30px;
+    margin-top: -175px;
+    margin-left: 270px;
+}
+
+.box5btn{
+    grid-area: box5;
+    margin-left: 265px;
+    margin-top: -75px;
+}
+
+
+.box6{
+    border: 2px solid black;
+    border-radius: 15px;
+    grid-column: 3;
+    grid-row: 4;
+    margin-bottom: 5px;
+    margin-right: 5px;
+}
+
+.box6text {
+    font-family: 'Bakbak One', cursive;
+    font-size: 28px;
+    -webkit-text-stroke-width: 1.5px;
+    -webkit-text-stroke-color: black;
+    color: white;
+    display: block;
+    text-align: left;
+    margin-left: 10px;
+}
+
+.box6text2{
+    font-family: 'Bakbak One', cursive;
+    -webkit-text-stroke-width: 1px;
+    font-size: 18px;
+    -webkit-text-stroke-color: black;
+    margin-top: -5px;
+    margin-left: 10px;
+    color: white;
+    display: block;
+    text-align: left;
+}
+
+.box6text3{
+    font-family: 'Bakbak One', cursive;
+    -webkit-text-stroke-width: 1px;
+    font-size: 18px;
+    -webkit-text-stroke-color: black;
+    margin-top: -20px;
+    margin-left: 10px;
+    color: white;
+    display: block;
+    text-align: left;
+}
+
+.box6img{
+    grid-area: box3;
+    height: 30px;
+    margin-top: -185px;
+    margin-left: 270px;
+}
+
+.box6btn{
+    grid-area: box3;
+    margin-left: 265px;
+    margin-top: -80px;
+}
+
+.wrapper_1 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 100px;
+    gap: 15px;
+    border: 4px solid black;
+    border-radius: 10px;
+    background-color: #323C50;
+    margin-top: -100px;
+}
+
+.box1_1 {
+    border: 2px solid black;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    margin-top: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.box_1_1_h2{
+    font-family: 'Bakbak One', cursive;
+    font-size: 70px;
+    -webkit-text-stroke-width: 2.5px;
+    -webkit-text-stroke-color: black;
+    color: white;
+    display: block;
+    margin-bottom: -25px;
+    margin-top: -10px;
+    text-align: center;
+}
+
+.box_1_1_img{
+    grid-area: box_1_1;
+    height: 160px;
+    margin-left: 492px;
+    margin-top: 5px;
+}
+
+
+.box_2_1 {
+    border: 2px solid black;
+    grid-column-start: 1;
+    grid-row-start: 3;
+    grid-row-end: 5;
+    margin-bottom: 5px;
+    margin-left: 5px;
+}
+
+.box_2_1_text{
+    font-family: 'Bakbak One', cursive;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
+    color: white;
+    display: block;
+    text-align: center
+}
+
+.box_2_1_text2{
+    font-family: 'Bakbak One', cursive;
+    -webkit-text-stroke-width: 1.5px;
+    -webkit-text-stroke-color: black;
+    font-size: 50px;
+    color: white;
+    text-align: center;
+}
+.box_2_1_btn{
+    margin-top: 50px;
+}
+
+.box_2_1_button{
+    background-color: #323C50;
+    display: grid;
+    grid-area: box_2_1;
+    border: 5px solid black;
+    border-radius: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    transition: all 0.2s ease-in-out;
+}
+
+.box_2_1_button:hover{
+    transform: scale(1.1);
+}
+
+.box_3_1 {
+    border: 2px solid black;
+    grid-column-start: 2;
+    grid-row-start: 3;
+    grid-row-end: 5;
+    margin-bottom: 5px;
+}
+
+.box_3_1_text{
+    font-family: 'Bakbak One', cursive;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
+    color: white;
+    display: block;
+    text-align: center
+}
+
+.box_3_1_text2{
+    font-family: 'Bakbak One', cursive;
+    -webkit-text-stroke-width: 1.5px;
+    -webkit-text-stroke-color: black;
+    font-size: 50px;
+    color: white;
+    text-align: center;
+}
+.box_3_1_btn{
+    margin-top: 50px;
+}
+
+.box_3_1_button{
+    background-color: #323C50;
+    display: grid;
+    grid-area: box_2_1;
+    border: 5px solid black;
+    border-radius: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    transition: all 0.2s ease-in-out;
+}
+
+.box_3_1_button:hover{
+    transform: scale(1.1);
+}
+
+.box_4_1 {
+    border: 2px solid black;
+    grid-column-start: 3;
+    grid-row-start: 3;
+    grid-row-end: 5;
+    margin-bottom: 5px;
+}
+
+.box_4_1_text{
+    font-family: 'Bakbak One', cursive;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
+    color: white;
+    display: block;
+    text-align: center
+}
+
+.box_4_1_text2{
+    font-family: 'Bakbak One', cursive;
+    -webkit-text-stroke-width: 1.5px;
+    -webkit-text-stroke-color: black;
+    font-size: 50px;
+    color: white;
+    text-align: center;
+}
+.box_4_1_btn{
+    margin-top: 50px;
+}
+
+.box_4_1_button{
+    background-color: #323C50;
+    display: grid;
+    grid-area: box_2_1;
+    border: 5px solid black;
+    border-radius: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    transition: all 0.2s ease-in-out;
+}
+
+.box_4_1_button:hover{
+    transform: scale(1.1);
+}
+
+.box_5_1 {
+    border: 2px solid black;
+    grid-column-start: 4;
+    grid-row-start: 3;
+    grid-row-end: 5;
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+
+.box_5_1_text{
+    font-family: 'Bakbak One', cursive;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
+    color: white;
+    display: block;
+    text-align: center
+}
+
+.box_5_1_text2{
+    font-family: 'Bakbak One', cursive;
+    -webkit-text-stroke-width: 1.5px;
+    -webkit-text-stroke-color: black;
+    font-size: 50px;
+    color: white;
+    text-align: center;
+}
+.box_5_1_btn{
+    margin-top: 50px;
+}
+
+.box_5_1_button{
+    background-color: #323C50;
+    display: grid;
+    grid-area: box_2_1;
+    border: 5px solid black;
+    border-radius: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    transition: all 0.2s ease-in-out;
+}
+
+.box_5_1_button:hover{
+    transform: scale(1.1);
+}
+
+
+.showResultsBtn{
+    background-color: #323C50;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    margin-top: 25px;
+    border: 2px solid black;
+    border-radius: 10px;
+    transition: all 0.2s ease-in-out;
+}
+
+.showResultsBtn:hover{
+    transform: scale(1.1);
+}
+.showResultsBtnText{
+    color: white;
+    font-family: 'Bakbak One', cursive;
+    -webkit-text-stroke-width: 1.5px;
+    -webkit-text-stroke-color: black;
+    font-size: 38px;
+}

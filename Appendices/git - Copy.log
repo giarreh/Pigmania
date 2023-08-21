@@ -1,0 +1,177 @@
+3aca61f  Giar Rehani                    2021-12-22 Fixed bug where user gained money instead of losing, whenever the user lost a race
+d1941fb  Giar Rehani                    2021-12-22 Added fix for clickpower being 0. Now controller checks if clickpower is 0, and if it is, raise it by 1.
+5c67eb5  Giar Rehani                    2021-12-22 Merge remote-tracking branch 'origin/main'
+f969c93  Giar Rehani                    2021-12-22 Changed playername to require normal input instead of phone input whenever you edit a user
+d9df11b  lemoi18                        2021-12-21 Merge remote-tracking branch 'origin/main'
+58655d1  lemoi18                        2021-12-21 Fixed a bug, where users now can change their Playername.
+f03f668  Giar Rehani                    2021-12-21 Merge remote-tracking branch 'origin/main'
+b769599  Giar Rehani                    2021-12-21 Changed name of admin user
+ab05ba3  Anders Farstad Myrmel          2021-12-21 Changed top dogs to top players in leaderboard
+62a68c5  Giar Rehani                    2021-12-21 changed speed on oskar pig from 25-->20
+b372c90  Giar Rehani                    2021-12-21 Merge branch 'UserDisplay' into PigUpdatePage
+3e352dc  lemoi18                        2021-12-21 Fixed id on the view
+a47e919  Giar Rehani                    2021-12-21 Added authorization requirement to access play page.
+a4f006c  Giar Rehani                    2021-12-21 fixed href link to index page ('/') rather than ('/home/index'). This caused loading issues for images on index page
+b2db20d  Giar Rehani                    2021-12-21 Styled "show results" button on racing page
+b3c70b4  Giar Rehani                    2021-12-21 reduced button borders from 5px to 3px
+fc296a1  Giar Rehani                    2021-12-21 border radius reduced from 10px to 5px on both wrappers
+79eda6b  Giar Rehani                    2021-12-21 Made post leaderboard prettier. MoneyTransaction page is now finished.
+d057863  Giar Rehani                    2021-12-21 Added winning text for when a user wins a race. Added losing text for when a user loses a race. Text includes amount lost or won. Text will be green if user won, and red if user lost. Made buttons, text within a grid to make it look nicer.
+9cdf4dc  Ole Markus Kvisgaard Roland    2021-12-20 Fixed the lighting
+a07bf51  Giar Rehani                    2021-12-20 Copy & pasted from Add.cshtml to EditClickPower.cshtml
+92b17d5  Giar Rehani                    2021-12-20 Removed border and centered upgrade image
+6b6ead1  Oskar Eftedal Markussen        2021-12-20 fixed the need for multible buttons to do from and rather did it on load
+8385ac4  Giar Rehani                    2021-12-20 Fixed price of next power upgrade not showing
+9037cd8  Ole Markus Kvisgaard Roland    2021-12-20 Ny truffle returns function
+05d8828  Oskar Eftedal Markussen        2021-12-20 fixed merge issues
+6a8c60c  Giar Rehani                    2021-12-20 Merge edit
+4daaf4d  Giar Rehani                    2021-12-20 Merge branch 'BettPigPlayPage' into PigUpdatePage
+4b3cd7f  Oskar Eftedal Markussen        2021-12-20 Added the sessionitems and used them to get better the preformance and safety
+36f1d19  Giar Rehani                    2021-12-20 Moved background image to each v-show so that background gets removed at the top whenever a race starts. There is still an issue with the UI being below the race. Needs to be hidden during race
+f27a646  Giar Rehani                    2021-12-20 Slightly adjusted pig before pushing commits
+98052c6  Giar Rehani                    2021-12-20 Finished 2nd betting screen UI. Changed some colors and made some small grid adjustments
+77c9996  Giar Rehani                    2021-12-20 Added all buttons for 2nd UI with hover effect, need to fix borders
+18af632  Giar Rehani                    2021-12-20 Finished 1st button, now should be easy to copy&paste on the three next buttons
+ff7b92f  Giar Rehani                    2021-12-20 Added skeleton for .css layout. Changed background on elements to be same as previous UI.
+7c183ad  Giar Rehani                    2021-12-20 Changes some properties of wrapper to make next UI same size as last.
+2ef0c40  Giar Rehani                    2021-12-20 Added layout for 2nd UI
+77d7e80  Giar Rehani                    2021-12-20 Removed awful background after placing bets Working on grid system for UI
+9236d7c  Ole Markus Kvisgaard Roland    2021-12-19 Removed random characters in title
+9c39c96  Ole Markus Kvisgaard Roland    2021-12-19 favicon.ico er en gris
+dd0c2c7  Giar Rehani                    2021-12-19 Changed fontsize of box1text
+74a54b5  Giar Rehani                    2021-12-19 Reworked UI for betting page. Added 5 different betting buttons. Added 5 different coin pictures for each button. Added Grid system for all buttons.
+8b5065d  Giar Rehani                    2021-12-19 Added some coins images from RuneScape. Purely for asthetic reasons.
+060b0d3  Giar Rehani                    2021-12-19 Added grid-styling for play page, not done yet.
+db8cc11  Giar Rehani                    2021-12-19 Copy & pasted everything from EditClickPower to Add
+ad909c2  Oskar Eftedal Markussen        2021-12-19 I added away to update the coin pouch with the bets you win or lose, it took a long while becouse i hade to make a new page named MoneyTransaction and then use that to update the database, i just did the teknical finishing touches but now it needs styling
+a190f09  Giar Rehani                    2021-12-19 Cleaned up some code in EditClickPower
+1de5a60  Giar Rehani                    2021-12-19 Reverted from double to int (truffleclickpower) Increased the price for click power upgrade.
+9ca23d0  Giar Rehani                    2021-12-19 Changed TruffleClickPower from int to double. Changed calculation in ClickerController to support the type change. Added calculation to see how much next click power upgrade costs. Reduced click power increase per upgrade from 1 to 0.33
+6e3bf09  Giar Rehani                    2021-12-19 Added EditClickPower in clicker controller. Added New upgrade function to truffle clicker. Everytime this upgrade is purchased, click power is increased by 1.
+e236b7d  Giar Rehani                    2021-12-19 Added truffleClickPower attribute to user.
+321396c  Giar Rehani                    2021-12-19 Changed favicon of website (addressbar icon)
+7e61d00  Giar Rehani                    2021-12-19 Changed logged in message from "Hello (email)" to "Hello (player name)" in the navbar
+965e186  Giar Rehani                    2021-12-19 Added text to truffle amount in navbar
+6527629  Giar Rehani                    2021-12-19 Fixed bug where every page had a lightpink background color
+fadb892  Giar Rehani                    2021-12-19 Merge branch 'BettPigPlayPage' into UserDisplay
+1432afa  Giar Rehani                    2021-12-19 added newline for commit testing
+4ba1676  Shaheen Thayalan               2021-12-19 Added coins display from the bruker
+a8d4e05  Giar Rehani                    2021-12-19 Added HTML template for easier management of the CSS file. Aligned button to center. Added border to button. Added hover effect to button.
+44b954f  Shaheen Thayalan               2021-12-19 Added logo and uploadedrest of the files
+fdc5eab  Shaheen Thayalan               2021-12-19 Added logo to submit button
+5e967bc  lemoi18                        2021-12-19 Fixed clicker redirection
+a7a40e7  lemoi18                        2021-12-19 Merge remote-tracking branch 'origin/BettPigPlayPage' into BettPigPlayPage
+09578c3  lemoi18                        2021-12-19 Fixed layout of the clicker
+c78a1fe  Ole Markus Kvisgaard Roland    2021-12-19 Deleted useless buttons, I am not able to delete that js file
+47dfde5  lemoi18                        2021-12-19 Merge did not go as planned fixed it
+9e9fe91  Ole Markus Kvisgaard Roland    2021-12-19 Endret ventetid
+3f3e84c  Ole Markus Kvisgaard Roland    2021-12-19 Merge remote-tracking branch 'origin/PigOperations' into BettPigPlayPage
+d823cfb  Ole Markus Kvisgaard Roland    2021-12-18 Slettet app.db filer
+560f6c7  Ole Markus Kvisgaard Roland    2021-12-18 Added local app.db files
+93a8c86  Anders Farstad Myrmel          2021-12-18 Resolved merging issues
+4cd487e  Anders Farstad Myrmel          2021-12-18 Added truffle clicker functionality, deleted inventory model, added trufflecoin attribute toapplicationuser
+97f5eeb  Anders Farstad Myrmel          2021-12-18 Resolved merging issue
+afd4d9c  Ole Markus Kvisgaard Roland    2021-12-18 Changed the values of the tempo variables
+c719248  Ole Markus Kvisgaard Roland    2021-12-18 Merge remote-tracking branch 'origin/BettPigPlayPage' into PigPlayPage
+3faf00f  Ole Markus Kvisgaard Roland    2021-12-18 .DS_Store
+bc79047  Anders Farstad Myrmel          2021-12-18 Added truffle clicker functionality, deleted inventory model, added trufflecoin attribute toapplicationuser
+33c1a91  Ole Markus Kvisgaard Roland    2021-12-18 Added finish line camera
+e83508c  lemoi18                        2021-12-18 Fixed some issues with the clicker controller
+4d4d28b  Oskar Eftedal Markussen        2021-12-18 added betting, and now only needs to be able to update database table, used onclick fuctions to get bet amount aswell as bet on, used vue to call on calculation of winnings or loses
+f4de466  Ole Markus Kvisgaard Roland    2021-12-18 Added a delay before the animation starts
+5d0ff5c  Ole Markus Kvisgaard Roland    2021-12-18 The graphics should lag less now
+fc5b130  Oskar Eftedal Markussen        2021-12-18 added the showing of the results aswell as using the diffrent mediums as vue and functions to show and save the result, used hidden Html elements to bypass diffrent things such as module and none-module script interactions
+6c5a829  Oskar Eftedal Markussen        2021-12-18 semi finished race, now with the ability to se results and pass it between moduled script and none module
+9354ccf  lemoi18                        2021-12-17 Merge remote-tracking branch 'origin/PIGMA-13-Instance-of-race-Algo' into PigOperations
+2adb42f  lemoi18                        2021-12-17 Added truffle clicker controller
+2f74752  Giar Rehani                    2021-12-17 Second try on merging two branches together.
+5fc88c7  Giar Rehani                    2021-12-17 Removed two temp db files that prevented me from changing branch
+034004c  Oskar Eftedal Markussen        2021-12-17 Merge remote-tracking branch 'origin/PigPlayPage' into PigPlayPage
+530b5a9  Oskar Eftedal Markussen        2021-12-17 test
+a5a76ee  Oskar Eftedal Markussen        2021-12-17 semi finished race, ficed some issues but still have more to fix
+9b05353  Giar Rehani                    2021-12-17 Copied & Replaced everything in Homepage.cshtml to Index.cshtml Removed Homepage.cshtml. Edited startup.cs to make Index the home page of our website.
+fa40876  Giar Rehani                    2021-12-17 Revert "Revert "Fixed button alignment issues. (this took me 5+ hours)""
+b1005bb  Giar Rehani                    2021-12-17 Revert "Fixed button alignment issues. (this took me 5+ hours)"
+bb4285f  Giar Rehani                    2021-12-17 Fixed button alignment issues. (this took me 5+ hours) All three button navigates user to their targeted destination. All buttons have a transform animation on hover.
+fc3ee33  lemoi18                        2021-12-17 Added a Clicker controller
+337caa5  lemoi18                        2021-12-17 Merged to leaderboard up to date
+21eac5e  Anders Farstad Myrmel          2021-12-17 Added leaderboard page displaying rankings of all users
+5da4dd5  lemoi18                        2021-12-17 Modified the register page for custom user attribute
+3ea9417  lemoi18                        2021-12-17 Added a User attribute Playername, and made it possible to register this when you make a new account, and created the files that were not autogenerated
+79b1382  Giar Rehani                    2021-12-17 Cleaned up some css code. Added leaderboard button
+0c82da8  Giar Rehani                    2021-12-17 Added leaderboard image to project
+004b5b5  Giar Rehani                    2021-12-17 Made buttons clickable. Buttons now navigates the user to their respective page.
+ce51975  Giar Rehani                    2021-12-17 Added new betting image. Added new button for betting page. Reworked animations for hover effects, other sections/divs does not move anymore when hovering elements.
+a96a844  lemoi18                        2021-12-17 Added a shortcut in the navbar for only users with admin roles
+277dcef  lemoi18                        2021-12-17 Merge branch 'PigPlayPage' of ssh://tools.uia.no:7999/ikt201g21h/pigma into PigPlayPage
+1419ee2  lemoi18                        2021-12-17 Merge remote-tracking branch 'origin/PigOperations' into PigPlayPage
+2e40256  Ole Markus Kvisgaard Roland    2021-12-17 idk
+ab8fd7b  Giar Rehani                    2021-12-17 Added hover effect on logo. Fixed typo in navbar for leaderboard
+726d160  lemoi18                        2021-12-17 Added a simple one to one connection with the currency and each user
+88fad67  Ole Markus Kvisgaard Roland    2021-12-17 The last commit was off a old version. This is the latest
+7425b35  Ole Markus Kvisgaard Roland    2021-12-17 It now works with a newer version of the race algorithm. I also changed some parts of the algorithm
+396f285  lemoi18                        2021-12-17 Added a Inventory class for the currency.
+68cabe9  lemoi18                        2021-12-17 Fixed a bug with nav bar
+0197eaa  lemoi18                        2021-12-17 Install rolemanager
+abeabd3  Giar Rehani                    2021-12-17 Created and added new logo for project. Added it into the homepage.cshtml
+a593953  Giar Rehani                    2021-12-17 Added pig image and text, centered them and changed background color to light pink
+8a23726  Giar Rehani                    2021-12-17 Made a new branch from PIGMA-13-Instance-of-race-Algo Added a pig image to directory
+cdb35e8  Ole Markus Kvisgaard Roland    2021-12-16 Graphics works with the race data
+9640deb  Oskar Eftedal Markussen        2021-12-16 styling to Play Page
+a8f410a  Oskar Eftedal Markussen        2021-12-16 Added pictures and styling to Play Page
+76722d9  lemoi18                        2021-12-16 Added a Delete view and made every controller function for Add,Edit,Delete
+2a0358c  lemoi18                        2021-12-16 Made Add Page so you can make a pig to the database
+55b55ad  lemoi18                        2021-12-16 Made a Edit-Form so we can edit each pig
+674a92a  Oskar Eftedal Markussen        2021-12-16 Changed Play view with use of vue and algorithm
+055e096  lemoi18                        2021-12-16 Added view on index, so we can see all of the pigs in the database
+94ebcb3  lemoi18                        2021-12-16 Made a Index for view of pigs so we can see every pig and linked the database with the controller
+161d3ea  lemoi18                        2021-12-16 Made a new branch for operations we can do on a pig, make a controller and pages Add, Delete, Edit and Details
+7266d0a  Giar Rehani                    2021-12-16 Removed duplicate home buttons in the nav bar
+866fd3b  lemoi18                        2021-12-16 Fixed missing {} in ApplicationUser, and started working on the Betting Page
+335fb1a  Shaheen Thayalan               2021-12-16 Fixed
+1227022  Shaheen Thayalan               2021-12-16 Updated homecontroller and intilaizer
+a965e99  Ole Markus Kvisgaard Roland    2021-12-16 The most basic graphics are done. Not conbined with the race algorithm
+535f89a  Shaheen Thayalan               2021-12-16 Merged user account ith instance of race algorithm
+30de489  Giar Rehani                    2021-12-16 Merge branch 'PIGMA-13-Instance-of-race-Algo' of ssh://tools.uia.no:7999/ikt201g21h/pigma into PIGMA-13-Instance-of-race-Algo
+68c386b  lemoi18                        2021-12-16 make connections to leaderboard and betting site.
+b14dcbb  Giar Rehani                    2021-12-16 fixed starting amount from 1 to 0
+9b2510a  Giar Rehani                    2021-12-16 Added button with a script to add one truffle per click Added css styling for button Added truffleclicker.js to _Layout.cshtml
+8673357  Giar Rehani                    2021-12-16 added .css and .js files for truffle clicker page
+3e5c3c2  Giar Rehani                    2021-12-16 Added Truffle clicker landing page and added routing from navbar
+f5a38b0  Giar Rehani                    2021-12-16 Created a basic leaderboard with hardcoded entries, which are to be filled (TBF).
+ee8de47  Giar Rehani                    2021-12-16 Added leaderboard.js to _Layout.cshtml
+52e0e13  Giar Rehani                    2021-12-16 - Cleared Leaderboard.cshtml - Added leaderboard.css - Added leaderboard.js Currently all files are empty
+b1f3d4d  Shaheen Thayalan               2021-12-15 Deleted model for coins and added as an attribute instead for user
+fac97f3  Oskar Eftedal Markussen        2021-12-15 Added Betting,Leaderboard,Play and Race into Nav-Bar
+7a678a4  Lars Erik Bakkland Moi         2021-12-15 Now merge conflict resovled
+ae7787e  Lars Erik Bakkland Moi         2021-12-15 merging complete
+20d1110  Lars Erik Bakkland Moi         2021-12-15 Fixed the merge conflicts and is now ready to merge.
+dc36a5f  Oskar Eftedal Markussen        2021-12-15 Making changes to merge
+6b7f514  Oskar Eftedal Markussen        2021-12-15 Renaming to merge correctly
+ec369e9  Oskar Eftedal Markussen        2021-12-15 adding data to the algorithm from the database
+9e1122f  Lars Erik Bakkland Moi         2021-12-15 Merge branch 'View-of-Race' of ssh://tools.uia.no:7999/ikt201g21h/pigma into View-of-Race
+cfd7aaa  Lars Erik Bakkland Moi         2021-12-15 Added Leaderboard page and Betting page view and in home controller
+6cf9fc6  Giar Rehani                    2021-12-15 Test commit
+bd5a2b4  Shaheen Thayalan               2021-12-15 Now have i added the user and roles and connected it to the coins
+d545dac  Shaheen Thayalan               2021-12-15 Added user and roles, have also connected the coins to the accounts
+0a148a8  Lars Erik Bakkland Moi         2021-12-15 added a redirect button on the startpage called Play and it goes to /Home/Play
+d47ff14  Lars Erik Bakkland Moi         2021-12-15  Added a new page called Play, and added a function in the controller to view the new page
+491fc52  Lars Erik Bakkland Moi         2021-12-15 Edited inplementation accordingly to Vue documentation 3.0
+ba64140  Lars Erik Bakkland Moi         2021-12-15 Removed one unnecessary element in our startpage
+43efdef  Lars Erik Bakkland Moi         2021-11-12 Added a basic Vue App, And added a basic home page
+7e9cbe0  Oskar Eftedal Markussen        2021-11-12 fixing and pulling so it can merge with main
+5539f02  Oskar Eftedal Markussen        2021-11-12 fix the table
+f4bd532  Oskar Eftedal Markussen        2021-11-12 fix the dictonary input with x cords
+06113a7  Anders Farstad Myrmel          2021-11-12 Added name attribute to pig database model. In addition to implementing functionality to utilize the database model in javascript.
+adbc5ee  Oskar Eftedal Markussen        2021-11-12 fusing the algorithme with the randomizer
+c99d165  Shaheen Thayalan               2021-11-11 Merged NB_randomizer to the alogrithm
+3917eae  Ole Markus Kvisgaard Roland    2021-11-11 Inclused: Pigmodel, Running track and pigs moving. But pig model is not loading
+7e257b8  Shaheen Thayalan               2021-11-02 Added Normal Disitrubtion randomizer
+5fcbbc7  Anders Farstad Myrmel          2021-10-29 Pull request #2: Added pig model  database with one attribute for vertical slice
+648787c  Anders Farstad Myrmel          2021-10-25 Added pig model
+305403e  Ole Markus Kvisgaard Roland    2021-10-20 Pull request #1: Removed Privacy
+af85849  Ole Markus Kvisgaard Roland    2021-10-20 Removed Privacy
+913cb76  Ole Markus Kvisgaard Roland    2021-10-20 Added empty project
+8dc9fb4  Ole Markus Kvisgaard Roland    2021-10-20 removed test.txt
+67035b1  Ole Markus Kvisgaard Roland    2021-10-20 test
+7353bc0  Ole Markus Kvisgaard Roland    2021-10-20 Added .gitignore

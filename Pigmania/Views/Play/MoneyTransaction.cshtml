@@ -1,0 +1,555 @@
+﻿@model Pigmania.Models.ApplicationUser
+<link rel="stylesheet" href="\css\MoneyTransaction.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bakbak+One&display=swap" rel="stylesheet">
+@{
+    ViewBag.Title = "title";
+    Layout = "_Layout";
+}
+<script language="javascript" type="text/javascript" src="/js/choose_pigs.js"></script>
+<p hidden id="amo"></p>
+
+<div id="vue" > 
+
+<div class="row" v-show="bets1">
+    <div class="col-md-4">
+        <form asp-action="MoneyTransaction" asp-route-amount="1" id="for1">
+            
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <span asp-validation-for="TruffleCoins" class="text-danger"></span>
+            </div>
+            <div>
+                <input type="Submit" value="Claim your Reward!!!" id="Submit" class="btn btn-primary"/>
+            </div>
+        </form>
+    </div>
+</div>
+
+<div class="row" v-show="bets3">
+    <div class="col-md-4">
+        <form asp-action="MoneyTransaction" asp-route-amount="3" id="for2">
+            
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <span asp-validation-for="TruffleCoins" class="text-danger"></span>
+            </div>
+            <div>
+                <input type="Submit" value="Claim your Reward!!!" id="Submit" class="btn btn-primary"/>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+<div class="row" v-show="bets10">
+    <div class="col-md-4">
+        <form asp-action="MoneyTransaction" asp-route-amount="10" id="for3">
+            
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <span asp-validation-for="TruffleCoins" class="text-danger"></span>
+            </div>
+            <div>
+                <input type="Submit" value="Claim your Reward!!!" id="Submit" class="btn btn-primary"/>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+<div class="row" v-show="bets12">
+    <div class="col-md-4">
+        <form asp-action="MoneyTransaction" asp-route-amount="30" id="for4">
+            
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <span asp-validation-for="TruffleCoins" class="text-danger"></span>
+            </div>
+            <div>
+                <input type="Submit" value="Claim your Reward!!!" id="Submit" class="btn btn-primary"/>
+            </div>
+        </form>
+    </div>
+</div>
+
+<div class="row" v-show="bets18">
+    <div class="col-md-4">
+        <form asp-action="MoneyTransaction" asp-route-amount="100" id="for5">
+            
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <span asp-validation-for="TruffleCoins" class="text-danger"></span>
+            </div>
+            <div>
+                <input type="Submit" value="Claim your Reward!!!" id="Submit" class="btn btn-primary"/>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+<div class="row" v-show="bets20">
+    <div class="col-md-4">
+        <form asp-action="MoneyTransaction" asp-route-amount="300" id="for6">
+            
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <span asp-validation-for="TruffleCoins" class="text-danger"></span>
+            </div>
+            <div>
+                <input type="Submit" value="Claim your Reward!!!" id="Submit" class="btn btn-primary"/>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+<div class="row" v-show="bets24">
+    <div class="col-md-4">
+        <form asp-action="MoneyTransaction" asp-route-amount="1000" id="for7">
+            
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <span asp-validation-for="TruffleCoins" class="text-danger"></span>
+            </div>
+            <div>
+                <input type="Submit" value="Claim your Reward!!!" id="Submit" class="btn btn-primary"/>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+<div class="row" v-show="bets26">
+    <div class="col-md-4">
+        <form asp-action="MoneyTransaction" asp-route-amount="3000" id="for8">
+            
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <span asp-validation-for="TruffleCoins" class="text-danger"></span>
+            </div>
+            <div>
+                <input type="Submit" value="Claim your Reward!!!" id="Submit" class="btn btn-primary"/>
+            </div>
+        </form>
+    </div>
+</div>
+
+<div class="row" v-show="bets29">
+    <div class="col-md-4">
+        <form asp-action="MoneyTransaction" asp-route-amount="10000" id="for9">
+            
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <span asp-validation-for="TruffleCoins" class="text-danger"></span>
+            </div>
+            <div>
+                <input type="Submit" value="Claim your Reward!!!" id="Submit" class="btn btn-primary"/>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+<div class="row" v-show="bets31">
+    <div class="col-md-4">
+        <form asp-action="MoneyTransaction" asp-route-amount="30000" id="for10">
+            
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <span asp-validation-for="TruffleCoins" class="text-danger"></span>
+            </div>
+            <div>
+                <input type="Submit" value="Claim your Reward!!!" id="Submit" class="btn btn-primary"/>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+<div class="row" v-show="bets33">
+    <div class="col-md-4">
+        <form asp-action="MoneyTransaction" asp-route-amount="100000" id="for11">
+            
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <span asp-validation-for="TruffleCoins" class="text-danger"></span>
+            </div>
+            <div>
+                <input type="Submit" value="Claim your Reward!!!" id="Submit" class="btn btn-primary"/>
+            </div>
+        </form>
+    </div>
+</div>
+
+<div class="row" v-show="bets35">
+    <div class="col-md-4">
+        <form asp-action="MoneyTransaction" asp-route-amount="300000" id="for12">
+            
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <span asp-validation-for="TruffleCoins" class="text-danger"></span>
+            </div>
+            <div>
+                <input type="Submit" value="Claim your Reward!!!" id="Submit" class="btn btn-primary"/>
+            </div>
+        </form>
+    </div>
+</div>
+
+<div class="row" v-show="bets36">
+    <div class="col-md-4">
+        <form asp-action="MoneyTransaction" asp-route-amount="1000000" id="for13">
+            
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <span asp-validation-for="TruffleCoins" class="text-danger"></span>
+            </div>
+            <div>
+                <input type="Submit" value="Claim your Reward!!!" id="Submit" class="btn btn-primary"/>
+            </div>
+        </form>
+    </div>
+</div>
+
+<div class="row" v-show="bets37">
+    <div class="col-md-4">
+        <form asp-action="MoneyTransaction" asp-route-amount="3000000" id="for14">
+            
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <span asp-validation-for="TruffleCoins" class="text-danger"></span>
+            </div>
+            <div>
+                <input type="Submit" value="Claim your Reward!!!" id="Submit" class="btn btn-primary"/>
+            </div>
+        </form>
+    </div>
+</div>
+
+<div class="row" v-show="bets38">
+    <div class="col-md-4">
+        <form asp-action="MoneyTransaction" asp-route-amount="-1" id="for15">
+            
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <span asp-validation-for="TruffleCoins" class="text-danger"></span>
+            </div>
+            <div>
+                <input type="Submit" value="Claim your Reward!!!" id="Submit" class="btn btn-primary"/>
+            </div>
+        </form>
+    </div>
+</div>
+
+<div class="row" v-show="bets39">
+    <div class="col-md-4">
+        <form asp-action="MoneyTransaction" asp-route-amount="-10" id="for16">
+            
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <span asp-validation-for="TruffleCoins" class="text-danger"></span>
+            </div>
+            <div>
+                <input type="Submit" value="Claim your Reward!!!" id="Submit" class="btn btn-primary"/>
+            </div>
+        </form>
+    </div>
+</div>
+
+<div class="row" v-show="bets40">
+    <div class="col-md-4">
+        <form asp-action="MoneyTransaction" asp-route-amount="-100" id="for17">
+            
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <span asp-validation-for="TruffleCoins" class="text-danger"></span>
+            </div>
+            <div>
+                <input type="Submit" value="Claim your Reward!!!" id="Submit" class="btn btn-primary"/>
+            </div>
+        </form>
+    </div>
+</div>
+
+<div class="row" v-show="bets41">
+    <div class="col-md-4">
+        <form asp-action="MoneyTransaction" asp-route-amount="-1000" id="for18">
+            
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <span asp-validation-for="TruffleCoins" class="text-danger"></span>
+            </div>
+            <div>
+                <input type="Submit" value="Claim your Reward!!!" id="Submit" class="btn btn-primary"/>
+            </div>
+        </form>
+    </div>
+</div>
+
+<div class="row" v-show="bets42">
+    <div class="col-md-4">
+        <form asp-action="MoneyTransaction" asp-route-amount="-10000" id="for19">
+            
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <span asp-validation-for="TruffleCoins" class="text-danger"></span>
+            </div>
+            <div>
+                <input type="Submit" value="Claim your Reward!!!" id="Submit" class="btn btn-primary"/>
+            </div>
+        </form>
+    </div>
+</div>
+
+<div class="row" v-show="bets43">
+    <div class="col-md-4">
+        <form asp-action="MoneyTransaction" asp-route-amount="-100000" id="for20">
+            
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <span asp-validation-for="TruffleCoins" class="text-danger"></span>
+            </div>
+            <div>
+                <input type="Submit" value="Claim your Reward!!!" id="Submit" class="btn btn-primary"/>
+            </div>
+        </form>
+    </div>
+</div>
+
+<div class="row" v-show="bets44">
+    <div class="col-md-4">
+        <form asp-action="MoneyTransaction" asp-route-amount="-1000000" id="for21">
+            
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <span asp-validation-for="TruffleCoins" class="text-danger"></span>
+            </div>
+            <div>
+                <input type="Submit" value="Claim your Reward!!!" id="Submit" class="btn btn-primary"/>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+
+
+</div>
+
+<div id="tab">
+    <div class="wrapper_table">
+            <table id="placeTable" class="placeTable1">
+                
+                <tr>
+                    <th class="tableText">Place</th>
+                    <th class="tableText">Name</th>
+                </tr>
+                <tr>
+                    <td class="rank_1" id="place1"></td>
+                    <td class="rank_1" id="name1"></td>
+                </tr>
+                <tr>
+                    <td class="tableText" id="place2"></td>
+                    <td class="tableText" id="name2"></td>
+                </tr>
+                <tr>
+                    <td class="tableText" id="place3"></td>
+                    <td class="tableText" id="name3"></td>
+                </tr>
+                <tr>
+                    <td class="tableText" id="place4"></td>
+                    <td class="tableText" id="name4"></td>
+                </tr>
+    
+    
+            </table>
+        </div>
+    <div class="wrapper_mt">
+        <div class="box1_mt bg-dark">
+            <p id="postRaceText" class="box1_mt_text1"></p>
+            <p class="box1_mt_text2" id="postRaceText1"></p>
+        </div>
+        <div class="box2_mt bg-dark">
+            <button  class="box2_mt_btn" onclick="window.location.href='/play/play'">
+                <h2 class="box2_mt_btn_text">Play again!</h2>
+            </button>
+        </div>
+        
+        <div class="box3_mt bg-dark">
+            <button  class="box3_mt_btn" onclick="window.location.href='/'">
+                <h2 class="box3_mt_btn_text">Go Home</h2>
+            </button>
+        </div>
+        
+    </div>
+    
+</div>
+
+@section Scripts
+ {
+     <script>
+      const App = {
+        data() {
+          return {
+            bets1: false,
+            bets2: false,
+            bets3: false,
+            bets4: false,
+            bets5: false,
+            bets6: false,
+            bets7: false,
+            bets8: false,
+            bets9: false,
+            bets10: false,
+            bets11: false,
+            bets12: false,
+            bets13: false,
+            bets14: false,
+            bets15: false,
+            bets16: false,
+            bets17: false,
+            bets18: false,
+            bets19: false,
+            bets20: false,
+            bets21: false,
+            bets22: false,
+            bets23: false,
+            bets24: false,
+            bets25: false,
+            bets26: false,
+            bets27: false,
+            bets28: false,
+            bets29: false,
+            bets30: false,
+            bets31: false,
+            bets32: false,
+            bets33: false,
+            bets34: false,
+            bets35: false,
+            bets36: false,
+            bets37: false,
+            bets38: false,
+            bets39: false,
+            bets40: false,
+            bets41: false,
+            bets42: false,
+            bets43: false,
+            bets44: false,
+            bord: true,
+           
+            
+          }
+        },
+        methods: {
+                     
+        } 
+      }
+      Vue.createApp(App).mount('#vue')
+     
+      </script>
+ }
+ 
+<script>
+
+
+window.onload = function() {
+    let trigger = sessionStorage.getItem("trigger");
+    let amountbett = sessionStorage.getItem("amountbett");
+     document.getElementById("amo").innerText = amountbett;
+     document.getElementById("place1").innerHTML =  1;
+     document.getElementById("place2").innerHTML =  2;
+     document.getElementById("place3").innerHTML =  3;
+     document.getElementById("place4").innerHTML =  4;
+     let one = sessionStorage.getItem("one");
+     let two = sessionStorage.getItem("two");
+     let three = sessionStorage.getItem("three");
+     let four = sessionStorage.getItem("four");
+     document.getElementById("name1").innerText = one;
+     document.getElementById("name2").innerText = two;
+     document.getElementById("name3").innerText = three;
+     document.getElementById("name4").innerText = four;
+     if(amountbett > 0){
+         document.getElementById("postRaceText").innerHTML = "Congratulations, you have won: ";
+         document.getElementById("postRaceText1").innerHTML = amountbett;
+         document.getElementById("postRaceText1").style.color = "limegreen";
+     }
+     if(amountbett < 0){
+         document.getElementById("postRaceText").innerHTML = "Unfortunately, you have lost: ";
+         document.getElementById("postRaceText1").innerHTML = amountbett;
+         document.getElementById("postRaceText1").style.color = "red";
+     }
+    if(trigger == 1){
+        
+        sessionStorage.setItem("trigger", 0);
+
+          let a = document.getElementById("amo").innerText;
+          
+                if (a == 1){
+                    document.getElementById("for1").submit();
+                }
+                if (a == 3){
+                              document.getElementById("for2").submit();
+                          }
+                if (a == 10){
+                              document.getElementById("for3").submit();
+                          }
+                if (a == 30){
+                              document.getElementById("for4").submit();
+                          }
+                if (a == 100){
+                              document.getElementById("for5").submit();
+                          }
+                if (a == 300){
+                              document.getElementById("for6").submit();
+                          }
+                if (a == 1000){
+                              document.getElementById("for7").submit();
+                          }
+                  if (a == 3000){
+                              document.getElementById("for8").submit();
+                          }
+                  if (a == 10000){
+                              document.getElementById("for9").submit();
+                          }
+                if (a == 30000){
+                              document.getElementById("for10").submit();
+                          }
+                if (a == 100000){
+                              document.getElementById("for11").submit();
+                          }
+                 if (a == 300000){
+                              document.getElementById("for12").submit();
+                          }
+                 if (a == 1000000){
+                              document.getElementById("for13").submit();
+                          }
+                 if (a == 3000000){
+                              document.getElementById("for14").submit();
+                          }
+                if (a == -1){
+                              document.getElementById("for15").submit();
+                          }
+                if (a == -10){
+                             document.getElementById("for16").submit();
+                          }
+                if (a == -100){
+                              document.getElementById("for17").submit();
+                          }
+                if (a == -1000){
+                              document.getElementById("for18").submit();
+                          }
+                if (a == -10000){
+                              document.getElementById("for19").submit();
+                          }
+                if (a == -100000){
+                              document.getElementById("for20").submit();
+                          }
+                 if (a == -1000000){
+                              document.getElementById("for21").submit();
+                          }
+         }
+};
+</script>

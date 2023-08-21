@@ -1,0 +1,371 @@
+﻿@model IEnumerable<Pigmania.Models.Pig>
+
+@using System.Collections
+@using System.Security.Cryptography
+
+@{
+    ViewData["Title"] = "Play";
+}
+
+<head>
+    <script type="text/javascript" src="/js/choose_pigs.js"></script>
+    <link rel="stylesheet" href="\css\PlayPage.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bakbak+One&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<div id="vue">
+    <canvas id="cvs" style="display: block"></canvas>
+    <div v-show="val">
+        <div class="bgImage">
+            <img src="/pictures/pigo.png" style="background-repeat: no-repeat;" alt="backgroundPigs" class="bgImageClass">
+        </div>
+        <div class="wrapper">
+            <div class="box1 bg-dark">
+                <h2 class="box1text">Choose a betsize!</h2>
+                <img src="/Img/Betting hand.png" alt="betting hand image" class="box1img">
+            </div>
+
+            <div class="box2 bg-dark">
+                <h1 class="box2text">1 Truffle Coin</h1>
+                <p class="box2text2">Low risk & Low reward</p>
+                <img class="box2img" src="/Img/Coins/Coins_5.png" alt="coins_5 image">
+                <div class="box2btn">
+                    <button id="box2Button" class="btn btn-outline-light" type="button" v-on:click="showbetts" onclick="bettamount(1)">BET</button>
+                </div>
+            </div>
+
+            <div class="box3 bg-dark">
+                <h2 class="box3text">10 Truffle Coins</h2>
+                <p class="box3text2">Low risk &</p>
+                <p class="box3text3">Low Reward</p>
+                <img class="box3img" src="/Img/Coins/Coins_25.png" alt="coins_25 image">
+                <div class="box3btn">
+                    <button id="box3Button" class="btn btn-outline-light" type="button" v-on:click="showbetts" onclick="bettamount(10)">BET</button>
+                </div>
+            </div>
+
+            <div class="box4 bg-dark">
+                <h2 class="box4text">100 Truffle Coins</h2>
+                <p class="box4text2">Medium risk &</p>
+                <p class="box4text3">Medium Reward</p>
+                <img class="box4img" src="/Img/Coins/Coins_100.png" alt="coins_100 image">
+                <div class="box4btn">
+                    <button id="box4Button" class="btn btn-outline-light" type="button" v-on:click="showbetts" onclick="bettamount(100)">BET</button>
+                </div>
+            </div>
+
+            <div class="box5 bg-dark">
+                <h2 class="box5text">1000 Truffle Coins</h2>
+                <p class="box5text2">High risk &</p>
+                <p class="box5text3">High Reward</p>
+                <img class="box5img" src="/Img/Coins/Coins_250.png" alt="coins_250 image">
+                <div class="box5btn">
+                    <button id="box5Button" class="btn btn-outline-light" type="button" v-on:click="showbetts" onclick="bettamount(1000)">BET</button>
+                </div>
+            </div>
+
+            <div class="box6 bg-dark">
+                <h2 class="box6text">10000 Truffle Coins</h2>
+                <p class="box6text2">Ultra high risk &</p>
+                <p class="box6text3">Ultra high Reward</p>
+                <img class="box6img" src="/Img/Coins/Coins_1000.png" alt="coins_100 image">
+                <div class="box6btn">
+                    <button id="box6Button" class="btn btn-outline-light" type="button" v-on:click="showbetts" onclick="bettamount(10000)">BET</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div v-show="bets" style="display: block;">
+        <div class="bgImage">
+            <img src="/pictures/pigo.png" style="background-repeat: no-repeat;" alt="backgroundPigs" class="bgImageClass">
+        </div>
+        <div class="wrapper_1">
+            <div class="box1_1 bg-dark">
+                <h2 class="box_1_1_h2">Choose your pig!</h2>
+                <img class="box_1_1_img" src="/Img/Pigmania logo.png" alt="Pigmania logo">
+            </div>
+
+            <div class="box_2_1 bg-dark">
+                <h1 class="box_2_1_text">Place bet on:</h1>
+                <div class="box_2_1_btn">
+                    <button id="btn_race1" class="box_2_1_button" type="button" v-on:click="showRace" onclick="betton(document.getElementById('pign0').innerText)">
+                        <h2 class="box_2_1_text2" id="pign0"></h2>
+                    </button>
+                </div>
+            </div>
+
+            <div class="box_3_1 bg-dark">
+                <h1 class="box_3_1_text">Place bet on:</h1>
+                <div class="box_3_1_btn">
+                    <button id="btn_race2" class="box_3_1_button" type="button" v-on:click="showRace" onclick="betton(document.getElementById('pign1').innerText)">
+                        <h2 class="box_3_1_text2" id="pign1"></h2>
+                    </button>
+                </div>
+            </div>
+
+            <div class="box_4_1 bg-dark">
+                <h1 class="box_4_1_text">Place bet on:</h1>
+                <div class="box_4_1_btn">
+                    <button id="btn_race3" class="box_4_1_button" type="button" v-on:click="showRace" onclick="betton(document.getElementById('pign2').innerText)">
+                        <h2 class="box_4_1_text2" id="pign2"></h2>
+                    </button>
+                </div>
+            </div>
+
+            <div class="box_5_1 bg-dark">
+                <h1 class="box_5_1_text">Place bet on:</h1>
+                <div class="box_5_1_btn">
+                    <button id="btn_race4" class="box_5_1_button" type="button" v-on:click="showRace" onclick="betton(document.getElementById('pign3').innerText)">
+                        <h2 class="box_5_1_text2" id="pign3"></h2>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <form name="form1" action="/Play/MoneyTransaction" method="get">
+        <div v-show="result" style="left: 10px"> 
+            <button v-on:click="showResult" class="showResultsBtn">
+                <h2 class="showResultsBtnText">
+                    Show results
+                </h2>
+            </button>
+        </div>
+    </form>
+    <div v-show="bord">
+
+        <table id="placeTable">
+            <tr>
+                <th>Place</th>
+                <th>Name</th>
+            </tr>
+            <tr>
+                <td id="name1">wait</td>
+                <td id="place1">wait</td>
+            </tr>
+            <tr>
+                <td id="name2">wait</td>
+                <td id="place2">wait</td>
+            </tr>
+            <tr>
+                <td id="name3">wait</td>
+                <td id="place3">wait</td>
+            </tr>
+            <tr>
+                <td id="name4">wait</td>
+                <td id="place4">wait</td>
+            </tr>
+
+
+        </table>
+        <div class="row align-items-md-stretch" style="left:400px;">
+            <div style="left: 10px"> <button onclick="window.location.href='/play/play'">Play again!</button></div>
+            <div style="left: 10px"> <button onclick="window.location.href='/home/index'">Home!</button></div>
+        </div>
+
+    </div>
+
+    <p id="pig1" hidden></p>
+    <p id="pig2" hidden></p>
+    <p id="pig3" hidden></p>
+    <p id="pig4" hidden></p>
+    <p id="pig1s" hidden></p>
+    <p id="pig2s" hidden></p>
+    <p id="pig3s" hidden></p>
+    <p id="pig4s" hidden></p>
+
+    <p id="betton" hidden></p>
+    <p id="bettamount" hidden></p>
+
+
+
+</div>
+</body>
+
+@section Scripts
+{
+    <script>
+      const App = {
+        data() {
+          return {
+            val: true,
+            bets: false,
+            rc: [],
+            Ranpigs1: "",
+            Ranpigs2: "",
+            Ranpigs3: "",
+            Ranpigs4: "",
+            race: [],
+            result: false,
+            bord: false
+          }
+        },
+        methods: {
+          showbetts() {
+            this.val = !this.val
+            this.bets = !this.bets
+            this.rs = callpigs()
+  
+          },
+          showRace(){
+             this.bets = !this.bets 
+             this.result = !this.result 
+          },
+          showResult(){
+              this.result = !this.result 
+              //this.bord = !this.bord
+              
+              WorL()
+              block();
+          },
+         nextGame(){
+              //this.bord = !this.bord
+              //this.val = !this.val
+               
+         },
+         nextHome(){
+              
+         }
+        } 
+      }
+      Vue.createApp(App).mount('#vue')
+     
+      </script>
+}
+
+<script>
+
+    let rc;
+    const settings = {n_pigs:4, map_length: 2000, slow: 1500}
+    
+    function bettamount(id){
+     sessionStorage.setItem("bettamount", id); 
+    }
+    
+    function betton(id){
+     sessionStorage.setItem("betton", id); 
+    }
+  
+    function WorL(){
+        let choosen, amount, winner, money;
+        amount = sessionStorage.getItem("bettamount");
+        choosen = sessionStorage.getItem("betton");
+        winner = sessionStorage.getItem("pig1");
+        
+        if (choosen === winner){
+            money = (3 * amount);
+            sessionStorage.setItem("bettamount", money); 
+        } else {
+           money = 0 - amount;
+           sessionStorage.setItem("bettamount", money);
+        }
+        sessionStorage.setItem("trigger", 1); 
+        SendAmount();
+    }
+ 
+    function block() {
+    document.getElementById("cvs").style.display = 'none';
+    document.body.style.backgroundImage = 'none';
+    //document.body.style.backgroundImage = "url('/pictures/truffle race.JPG')";  
+
+}
+      
+    function callpigs(){
+        let piq1 = 0; 
+        let json = @Html.Raw(Json.Serialize(Model));
+        let Ranpigs = choose_pigs(settings, json);
+    
+        for (let i = 0; i < settings.n_pigs; i++) {
+             let piggyn = "pign" + piq1;
+             document.getElementById(piggyn).innerHTML = Ranpigs[i].name;
+             piq1 += 1;
+         } 
+    
+    
+    sessionStorage.setItem("pig1", Ranpigs[0].name); 
+    sessionStorage.setItem("pig2", Ranpigs[1].name);  
+    sessionStorage.setItem("pig3", Ranpigs[2].name); 
+    sessionStorage.setItem("pig4", Ranpigs[3].name); 
+    sessionStorage.setItem("pigs1", Ranpigs[0].speed); 
+    sessionStorage.setItem("pigs2", Ranpigs[1].speed); 
+    sessionStorage.setItem("pigs3", Ranpigs[2].speed); 
+    sessionStorage.setItem("pigs4", Ranpigs[3].speed); 
+    return Ranpigs;
+ }
+ </script>
+
+<script type="module">
+    import {Init3DWorld} from "/js/World3D.js";
+    import {Race} from "/js/algorytme_pig_race.js";
+    
+    const settings = {n_pigs:4, map_length: 2000, slow: 1500}
+    const cvs = document.getElementById("cvs");
+    document.getElementById("btn_race1").addEventListener("click", call);
+    document.getElementById("btn_race2").addEventListener("click", call);
+    document.getElementById("btn_race3").addEventListener("click", call);
+    document.getElementById("btn_race4").addEventListener("click", call);
+
+    function call() {
+        let pig1 = sessionStorage.getItem("pig1");
+        let pig2 = sessionStorage.getItem("pig2");
+        let pig3 = sessionStorage.getItem("pig3");
+        let pig4 = sessionStorage.getItem("pig4");
+        let pigs1 = sessionStorage.getItem("pigs1");
+        let pigs2 = sessionStorage.getItem("pigs2");
+        let pigs3 = sessionStorage.getItem("pigs3");
+        let pigs4 = sessionStorage.getItem("pigs4");
+        
+        var dict = {
+                "name": {},
+                "speed": {}
+            };
+            
+        dict["name"][0] = pig1
+        dict["name"][1] = pig2
+        dict["name"][2] = pig3
+        dict["name"][3] = pig4
+        dict["speed"][0] = pigs1
+        dict["speed"][1] = pigs2
+        dict["speed"][2] = pigs3
+        dict["speed"][3] = pigs4
+        const race = Race(settings, dict);
+        
+        let st1, st2, st3, st4, temp = "1";
+        for (let i = 0; i < settings.n_pigs; i++){
+            temp = race["place"][race["Name"][i]];
+            
+            if (temp === 1){
+               st1 = race["Name"][i];
+            }
+            if (temp === 2){
+               st2 = race["Name"][i];                
+            }
+            if (temp === 3){
+               st3 = race["Name"][i];                   
+            }
+            if (temp === 4){
+               st4 = race["Name"][i];                   
+            }
+           
+            sessionStorage.setItem("pig1", st1); 
+            sessionStorage.setItem("pig2", st2); 
+            sessionStorage.setItem("pig3", st3); 
+            sessionStorage.setItem("pig4", st4); 
+            sessionStorage.setItem("name1", st1); 
+            sessionStorage.setItem("name2", st2); 
+            sessionStorage.setItem("name3", st3); 
+            sessionStorage.setItem("name4", st4); 
+            sessionStorage.setItem("place1", 1); 
+            sessionStorage.setItem("place2", 2); 
+            sessionStorage.setItem("place3", 3); 
+            sessionStorage.setItem("place4", 4); 
+        }    
+         
+        Init3DWorld(cvs, settings, race);
+    }
+</script>

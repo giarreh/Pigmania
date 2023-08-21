@@ -1,0 +1,31 @@
+﻿@model Pigmania.Models.Pig
+
+@{
+    ViewData["Title"] = "Add";
+}
+<h4>pig</h4>
+<hr/>
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Add">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Name" class="control-label"></label>
+                <input asp-for="Name" class="form-control" id="Name"/>
+                <span asp-validation-for="Name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Speed" class="control-label"></label>
+                <textarea asp-for="Speed" cols="60" rows="2" class="form-control" id="Speed"></textarea><br/>
+                <span asp-validation-for="Speed" class="text-danger"></span>
+            </div>
+            <div>
+                <input type="Submit" value="Submit" id="Submit" class="btn btn-primary"/>
+            </div>
+        </form>
+
+    </div>
+</div>
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>

@@ -1,0 +1,40 @@
+﻿@model IEnumerable<Pigmania.Models.ApplicationUser>
+
+@{
+    ViewData["Title"] = "Leaderboard";
+}
+
+<link rel="stylesheet" href="\css\leaderboard.css">
+
+<h1><span id="head"></span>Leaderboard<span id="head"></span></h1>
+<h2>Check out the top players</h2>
+
+<table class="container" id="myTable2">
+    <thead>
+    <tr>
+        <th><h1>Rank</h1></th>
+        <th><h1>Username</h1></th>
+        <th><h1>Coins</h1></th>
+        <th><h1>Win rate</h1></th>
+    </tr>
+    </thead>
+    <tbody>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                <!-- Tabell for rank -->
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Playername)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TruffleCoins)
+            </td>
+            <td>
+                TBD
+            </td>
+        </tr>
+    }
+    </tbody>
+</table>

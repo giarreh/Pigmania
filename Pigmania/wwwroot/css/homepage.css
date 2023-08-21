@@ -1,0 +1,92 @@
+﻿body{
+    background-color: #ffb6c1;
+}
+
+/*Pig section*/
+
+.pigPicture{
+    width: 50%;
+    border: 2px solid #FF1493;
+    border-radius: 25px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+    transition: all 0.2s ease-in-out;
+}
+
+.pigPicture:hover{
+    transform: scale(1.1);
+}
+
+.pigPictureText{
+    font-family: 'Bakbak One', cursive;
+    font-size: 100px;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
+    color: #FF1493;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center
+}
+
+.truffleClass{
+    background: #86c99a;
+    border: 2px solid #FF1493;
+    border-radius: 25px;
+    margin-right: 600px;
+    transition: all 0.2s ease-in-out;
+}
+.truffleClass:hover{
+    transform: scale(1.1);
+}
+.truffleImage{
+    display: block;
+    margin: 0 auto;
+    width: 350px;
+    height: 250px;
+}
+.truffleText{
+    font-family: 'Bakbak One', cursive;
+    font-size: 40px;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
+    color: #FF1493;
+    display: block;
+    margin: 0 auto;
+    text-align: center
+}
+
+.leaderboardClass{
+    background: #86c99a;
+    border: 2px solid #FF1493;
+    border-radius: 25px;
+    margin-left: 620px;
+    margin-top: -300px;
+    transition: all 0.2s ease-in-out;
+}
+
+.leaderboardClass:hover{
+    transform: scale(1.1);
+}
+
+.leaderboardImage{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 350px;
+    height: 250px;
+    padding-bottom: 15px;
+}
+
+.leaderboardText{
+    font-family: 'Bakbak One', cursive;
+    font-size: 40px;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
+    color: #FF1493;
+    display: block;
+    margin: 0 auto;
+    text-align: center
+}

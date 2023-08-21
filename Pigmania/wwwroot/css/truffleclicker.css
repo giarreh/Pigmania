@@ -1,0 +1,33 @@
+﻿body{
+    background-color: #ffb6c1;
+}
+
+.truffleCoin{
+    display:block;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+    border: 10px solid black;
+    width: 382px;
+    height: 382px;
+    transition: all 0.2s ease-in-out;
+}
+
+.truffleCoin:hover{
+    transform: scale(1.1);
+}
+
+.truffleClickImg{
+    display: block;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 382px;
+    height: 382px;
+    transition: all 0.2s ease-in-out;
+}
+
+.truffleClickImg:hover{
+    transform: scale(1.1);
+}

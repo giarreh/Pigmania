@@ -1,0 +1,88 @@
+
+@using System.Collections
+@using System.Security.Cryptography
+
+@model IEnumerable<Pigmania.Models.Pig>
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+<head>
+  <title>Race</title>
+  <style>
+table {
+  border-spacing: 0;
+  width: 100%;
+  border: 1px solid #ddd;
+}
+
+th, td {
+  text-align: left;
+  padding: 16px;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2
+}
+</style>
+
+  
+</head>
+<script type="text/javascript" src="js/algorytme_pig_race.js"></script>    
+
+<p id="do"></p>
+<div class="text-center">
+                       
+  <button id="Race" onclick="call()">Start race!</button>
+</div>
+
+<p id="test"></p>
+<script>
+
+let rc;
+let number_of_pigs = 4;
+
+function call(){
+    let piq = 0;
+    let Ranpigs = @Html.Raw(Json.Serialize(Model));
+    choosefour(Ranpigs);
+    rc = race(Ranpigs[1].name,Ranpigs[2].name,Ranpigs[3].name,Ranpigs[4].name,Ranpigs[1].speed,Ranpigs[2].speed,Ranpigs[3].speed,Ranpigs[4].speed)
+     for (let i = 0; i < number_of_pigs; i++) {
+         name = rc["Name"][i];
+         piggyn = "pign" + piq;
+         piggyp = "pigp" + piq;
+         document.getElementById(piggyp).innerHTML = rc["place"][name];
+         document.getElementById(piggyn).innerHTML = name;
+         document.getElementById("test").innerHTML = rc[name]["x3"];
+         piq += 1;
+     }
+     document.getElementById("placeTable").style.display = "block";
+    
+}
+
+</script>
+
+<table id="placeTable" style="display:none;">
+  <tr>
+    <th>Place</th>
+    <th>Name</th>
+  </tr>
+  <tr>
+    <td id="pigp0"></td>
+    <td id="pign0"></td>
+  </tr>
+  <tr>
+    <td id ="pigp1"></td>
+    <td id="pign1"></td>
+  </tr>
+  <tr>
+    <td id ="pigp2"></td>
+    <td id="pign2"></td>
+  </tr>
+  <tr>
+    <td id ="pigp3"></td>
+    <td id="pign3"></td>
+  </tr>
+
+
+</table>
